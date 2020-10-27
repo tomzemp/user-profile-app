@@ -61,6 +61,12 @@ const attributes = {
         },
         'intervalSinceLastAnalyticsTableSuccess',
         'lastAnalyticsTableRuntime',
+        {
+            label: 'lastAnalyticsTablePartitionSuccess',
+            getDisplayValue: (value, d2) => parseDateFromUTCString(value, d2),
+        },
+        'intervalSinceLastAnalyticsTablePartitionSuccess',
+        'lastAnalyticsTablePartitionRuntime',
         'environmentVariable',
         'systemId',
         {
